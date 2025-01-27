@@ -13,11 +13,15 @@
   <test_depend>python3-pytest</test_depend>
 
   <exec_depend>rclpy</exec_depend>
+
   <exec_depend>yasmin</exec_depend>
+  <exec_depend>yasmin_viewer</exec_depend>
+  <exec_depend>yasmin_ros</exec_depend>
+  <exec_depend>yasmin_msgs</exec_depend>
+
   <exec_depend>navigation2</exec_depend>
   <exec_depend>tf_transformations</exec_depend>
-  <exec_depend>turtlebot3</exec_depend>
-  <exec_depend>turtlebot3_simulations</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
   
   <export>
     <build_type>ament_python</build_type>
