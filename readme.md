@@ -83,12 +83,24 @@ cd /ros2_ws/src
 Ensure you’re still in the ros2_ws/src directory before you clone.
 
 ```bash
-git clone https://github.com/ragaslan/modeling-robot-behavior-using-YASMIN
+git clone https://github.com/ragaslan/modeling-robot-behavior-using-YASMIN .
 ```
 
 
 ### resolve dependencies 
 From the root of your workspace (ros2_ws), run the following command:
+
+```bash
+# get rosdep if you do not have
+sudo apt-get install python3-rosdep 
+```
+
+```bash
+# if your rosdep installation has not been initialized yet. Run: 
+sudo rosdep init
+rosdep update
+```
+
 ```bash
 # cd if you're still in the "src" directory
 cd .. # if you are still in the "src" directory otherwise it is not necessary
@@ -142,6 +154,13 @@ Source your overlay
 
 ```bash
 source install/local_setup.bash
+```
+
+# set key environment variables
+
+```bash
+export ROS_DOMAIN_ID=30
+export TURTLEBOT3_MODEL=burger 
 ```
 
 ### run
