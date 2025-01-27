@@ -74,7 +74,7 @@ First, go to directory where you want to create your workspace.
 Then run these commands:
 
 ```bash
-mkdir -p /ros2_ws/src
+mkdir -p ros2_ws/src
 cd /ros2_ws/src
 ```
 
@@ -83,7 +83,7 @@ cd /ros2_ws/src
 Ensure you’re still in the ros2_ws/src directory before you clone.
 
 ```bash
-git clone https://github.com/ragaslan/robot-behavior-modelling-with-yasmin
+git clone https://github.com/ragaslan/modeling-robot-behavior-using-YASMIN
 ```
 
 
