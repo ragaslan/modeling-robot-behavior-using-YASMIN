@@ -156,12 +156,36 @@ Source your overlay
 source install/local_setup.bash
 ```
 
+this is necessary for gazebo
+
+```bash
+source /usr/share/gazebo/setup.sh
+```
+
 # set key environment variables
 
 ```bash
 export ROS_DOMAIN_ID=30
 export TURTLEBOT3_MODEL=burger 
 ```
+
+# set burger model parameter
+If you get error when you start navigation, you should set some parameters in the burger yaml file
+
+Check this link: https://github.com/turtlebot/turtlebot4/issues/392
+
+```bash
+sudo nano /opt/ros/humble/share/turtlebot3_navigation2/param/burger.yaml
+
+# in the yaml file, change the robot_model_type in the line 29;
+
+# from:
+# robot_model_type: "differential"
+
+# change that line to :
+# robot_model_type: "nav2_amcl::DifferentialMotionModel"
+```
+
 
 ### run
 Now you can run the package.
