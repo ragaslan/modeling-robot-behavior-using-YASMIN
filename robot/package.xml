@@ -21,9 +21,12 @@
 
   <exec_depend>navigation2</exec_depend>
   <exec_depend>tf_transformations</exec_depend>
+  
   <exec_depend>turtlebot3_gazebo</exec_depend>
   <exec_depend>turtlebot3_cartographer</exec_depend>
-  
+  <exec_depend>turtlebot3_teleop</exec_depend>
+  <exec_depend>turtlebot3_navigation2</exec_depend>
+
   <export>
     <build_type>ament_python</build_type>
   </export>
