@@ -10,7 +10,7 @@ class SavingMapState(State):
         print("map saving state..")
         blackboard.__setitem__("map_saving_started",True)
         time.sleep(3)
-        subprocess.call('ros2 run nav2_map_server map_saver_cli -f ~/yasmin_ws/map',shell=True)
+        subprocess.call('ros2 run nav2_map_server map_saver_cli -f ./map',shell=True)
         time.sleep(3)
         blackboard.__setitem__("map_saving_started",False)
         return "map_saved"

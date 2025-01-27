@@ -11,7 +11,7 @@ class NavigationSetupState(State):
         
     def execute(self, blackboard):
         
-        navigationSetupProcess = subprocess.Popen(["ros2","launch","turtlebot3_navigation2","navigation2.launch.py","use_sim_time:=True","map:=/home/agaslan/yasmin_ws/map.yaml"])
+        navigationSetupProcess = subprocess.Popen(["ros2","launch","turtlebot3_navigation2","navigation2.launch.py","use_sim_time:=True","map:=./map.yaml"])
         
         blackboard.__setitem__("navigation_setup_pid",navigationSetupProcess.pid) 
         time.sleep(3)
