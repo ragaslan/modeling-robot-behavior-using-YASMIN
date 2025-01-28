@@ -2,9 +2,31 @@
 
 ## About project
 
-This project aimed to model robot behaviors by using state machine. YASMIN (yet another state machine) is used as the state machine.
+This project aimed to model robot behaviors by using state machine. YASMIN (yet another state machine) is used as the state machine. 
 
+This project has many states such as "starting gazebo world", "SLAM operation", "creating and saving map", "create stations", "navigation between stations" and "charging the robot". We aim to model these behaviors bu using state machines.
 
+### Why we use State Machines
+
+Using state machines prevents robots from operating unexpectedly. Robots operate according to state machine design and we do not face any unexpected behavior.
+
+Using state machines for modeling robot behaviors helps us to create modular code structure. The programmer divide the system according to state machine design. Then the programmer defines states for each part and manages these parts help of state transitions (outcomes).
+
+Using state machines is reliable, sustainable, modular and flexible solution to model robot behaviors.
+
+### Screenshots
+
+#### State Machine Design
+
+![State Machine Design](./screenshots/sm-last-form.jpg?raw=true)
+
+#### Starting Gazebo World
+![Starting Gazebo World](./screenshots/gazebo_world_1.png?raw=true)
+#### Slam Operation
+![SLAM Operation](./screenshots/rviz_mid.png?raw=true)
+![SLAM Operation Devam](./screenshots/rviz_last.png?raw=true)
+#### Navigation
+![Navigation](./screenshots/navigation.png?raw=true)
 ## Setup Steps (for Ubuntu 22.04 )
 
 ### install ROS2 Humble
