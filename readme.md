@@ -18,7 +18,7 @@ Using state machines is reliable, sustainable, modular and flexible solution to 
 
 #### State Machine Design
 
-![State Machine Design](./screenshots/sm-desing-en.png?raw=true)
+![State Machine Design](./screenshots/sm-design-en.png?raw=true)
 
 #### Starting Gazebo World
 ![Starting Gazebo World](./screenshots/gazebo_world_1.png?raw=true)
