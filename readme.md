@@ -10,7 +10,7 @@ This project has many states such as "starting gazebo world", "SLAM operation", 
 
 Using state machines prevents robots from operating unexpectedly. Robots operate according to state machine design and we do not face any unexpected behavior.
 
-Using state machines for modeling robot behaviors helps us to create modular code structure. The programmer divide the system according to state machine design. Then the programmer defines states for each part and manages these parts help of state transitions (outcomes).
+Using state machines for modeling robot behaviors helps us to create modular code structure. The programmer divide the system according to state machine design. Then the programmer defines states for each part and manages these parts with help of state transitions (outcomes).
 
 Using state machines is reliable, sustainable, modular and flexible solution to model robot behaviors.
 
